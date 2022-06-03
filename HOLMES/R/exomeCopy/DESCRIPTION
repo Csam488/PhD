@@ -1,0 +1,27 @@
+Package: exomeCopy
+Type: Package
+Title: Copy number variant detection from exome sequencing read depth
+Version: 1.30.0
+Date: 2017-04-25
+Author: Michael Love
+Maintainer: Michael Love <michaelisaiahlove@gmail.com>
+Description: Detection of copy number variants (CNV) from exome
+        sequencing samples, including unpaired samples.  The package
+        implements a hidden Markov model which uses positional
+        covariates, such as background read depth and GC-content, to
+        simultaneously normalize and segment the samples into regions
+        of constant copy count.
+License: GPL (>= 2)
+LazyLoad: yes
+Imports: stats4, methods, GenomeInfoDb
+Depends: IRanges (>= 2.5.27), GenomicRanges (>= 1.23.16), Rsamtools
+Suggests: Biostrings
+biocViews: CopyNumberVariation, Sequencing, Genetics
+git_url: https://git.bioconductor.org/packages/exomeCopy
+git_branch: RELEASE_3_9
+git_last_commit: af810bf
+git_last_commit_date: 2019-05-02
+Date/Publication: 2019-05-02
+NeedsCompilation: yes
+Packaged: 2019-05-03 00:19:27 UTC; biocbuild
+Built: R 3.6.1; x86_64-pc-linux-gnu; 2019-10-03 23:23:50 UTC; unix

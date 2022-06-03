@@ -1,0 +1,42 @@
+Package: Rhtslib
+Type: Package
+Title: HTSlib high-throughput sequencing library as an R package
+Version: 1.16.2
+Authors@R: 
+    c(person("Nathaniel", "Hayden", email="nhayden@fredhutch.org",
+        role=c("led", "aut")),
+    person("Martin", "Morgan", email="martin.morgan@roswellpark.org",
+        role="aut"),
+    person("Bioconductor", "Package Maintainer",
+        email="maintainer@bioconductor.org", role="cre"))
+Description: This package provides version 1.7 of the 'HTSlib' C
+    library for high-throughput sequence analysis. The package is
+    primarily useful to developers of other R packages who wish to
+    make use of HTSlib. Motivation and instructions for use of this
+    package are in the vignette, vignette(package="Rhtslib", "Rhtslib").
+License: LGPL (>= 2)
+Copyright: Unless otherwise noted in the file, all files outside
+        src/htslib-1.7 and inst/include copyright Bioconductor; for
+        files inside src/htslib-1.7 or inst/include, see file
+        src/htslib/LICENSE.
+Imports: zlibbioc
+LinkingTo: zlibbioc
+Suggests: BiocStyle, knitr
+SystemRequirements: libbz2 & liblzma (with header files)
+StagedInstall: no
+VignetteBuilder: knitr
+URL: https://github.com/Bioconductor/Rhtslib, http://www.htslib.org/
+BugReports: https://github.com/Bioconductor/Rhtslib
+biocViews: DataImport, Sequencing
+git_url: https://git.bioconductor.org/packages/Rhtslib
+git_branch: RELEASE_3_9
+git_last_commit: 736fc02
+git_last_commit_date: 2019-09-16
+Date/Publication: 2019-09-19
+NeedsCompilation: yes
+Packaged: 2019-09-20 01:16:56 UTC; biocbuild
+Author: Nathaniel Hayden [led, aut],
+  Martin Morgan [aut],
+  Bioconductor Package Maintainer [cre]
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+Built: R 3.6.1; x86_64-pc-linux-gnu; 2019-10-03 23:22:27 UTC; unix

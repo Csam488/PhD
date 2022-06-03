@@ -1,0 +1,20 @@
+useDynLib(exomeCopy, .registration = TRUE)
+importFrom(methods,show)
+importFrom(stats4, plot)
+import(IRanges,GenomicRanges,Rsamtools,GenomeInfoDb)
+
+export(subdivideGRanges,
+       countBamInGRanges,
+       getGCcontent,
+       generateBackground,
+       exomeCopy,
+       copyCountSegments,
+       plot.ExomeCopy,
+       compileCopyCountSegments,
+       plotCompiledCNV,
+       negLogLike,
+       viterbiPath)
+
+exportClasses(ExomeCopy)
+exportMethods(show,plot)
+

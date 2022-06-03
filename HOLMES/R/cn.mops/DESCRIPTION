@@ -1,0 +1,40 @@
+Package: cn.mops
+Maintainer: Guenter Klambauer <cn.mops@bioinf.jku.at>
+Author: Guenter Klambauer
+License: LGPL (>= 2.0)
+Type: Package
+Title: cn.mops - Mixture of Poissons for CNV detection in NGS data
+Description: cn.mops (Copy Number estimation by a Mixture Of PoissonS)
+    is a data processing pipeline for copy number variations and
+    aberrations (CNVs and CNAs) from next generation sequencing
+    (NGS) data. The package supplies functions to convert BAM files
+    into read count matrices or genomic ranges objects, which are
+    the input objects for cn.mops. cn.mops models the depths of
+    coverage across samples at each genomic position. Therefore, it
+    does not suffer from read count biases along chromosomes. Using
+    a Bayesian approach, cn.mops decomposes read variations across
+    samples into integer copy numbers and noise by its mixture
+    components and Poisson distributions, respectively. cn.mops
+    guarantees a low FDR because wrong detections are indicated by
+    high noise and filtered out. cn.mops is very fast and written
+    in C++.
+Version: 1.30.0
+Date: 2017-03-10
+URL: http://www.bioinf.jku.at/software/cnmops/cnmops.html
+Depends: R (>= 2.12), methods, utils, stats, graphics, parallel,
+        GenomicRanges
+Imports: BiocGenerics, Biobase, IRanges, Rsamtools, GenomeInfoDb,
+        S4Vectors, exomeCopy
+Suggests: DNAcopy
+LazyLoad: yes
+biocViews: Sequencing, CopyNumberVariation, Homo_sapiens, CellBiology,
+        HapMap, Genetics
+RoxygenNote: 6.0.1
+git_url: https://git.bioconductor.org/packages/cn.mops
+git_branch: RELEASE_3_9
+git_last_commit: a17073a
+git_last_commit_date: 2019-05-02
+Date/Publication: 2019-05-02
+NeedsCompilation: yes
+Packaged: 2019-05-03 00:20:37 UTC; biocbuild
+Built: R 3.6.1; x86_64-pc-linux-gnu; 2019-10-03 23:24:02 UTC; unix
