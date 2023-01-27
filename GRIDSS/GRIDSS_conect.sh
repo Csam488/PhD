@@ -6,4 +6,4 @@ export R_LIBS_USER=/scale_wlg_persistent/filesets/project/uoa02608/modules/GRIDS
 
 #Rscript -e "install.packages('BiocManager', repos='http://cran.stat.auckland.ac.nz/') ; library('BiocManager') ; BiocManager::install(c('StructuralVariantAnnotation'))"
 #Rscript -e "install.packages('/scale_wlg_persistent/filesets/project/uoa02608/modules/R_Lib_Arch/StructuralVariantAnnotation', repos = NULL, type = 'source')"
-Rscript /scale_wlg_persistent/filesets/project/uoa02608/modules/GRIDSS_connector/GRIDSS_connector_EDIT_TEST.r $1 $2
+Rscript GRIDSS_connector.r $1 $2
